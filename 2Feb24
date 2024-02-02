@@ -1,0 +1,68 @@
+# Basics Of Python-->
+# Date--> 2 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+# 
+
+# HackerRAnk Problem
+
+# 01-->https://www.hackerrank.com/challenges/swap-case/problem?isFullScreen=true
+
+# You are given a string and your task is to swap cases. 
+# In other words, convert all lowercase letters to uppercase letters
+#  and vice versa.
+
+# Solution:
+# def swap_case(s):
+    
+#     string=""
+#     for c in s:
+#         if c.isupper() == True:
+#             string+=(c.lower())
+#         else:
+#             string+=(c.upper())
+        
+        
+        
+#     return string
+        
+    
+
+# if __name__ == '__main__':
+#     s = input()
+#     result = swap_case(s)
+#     print(result)
+
+# After this Question
+# Rank-->825525
+# 3 Star Coder (115/220)
+
+
+
+# 02-->https://www.hackerrank.com/challenges/whats-your-name/problem?isFullScreen=true
+
+# You are given the firstname and lastname of a person on two different lines. Your task is to read them and print the following:
+
+# Hello firstname lastname! You just delved into python.
+# Function Description
+# Complete the print_full_name function in the editor below.
+# print_full_name has the following parameters:
+# string first: the first name
+# string last: the last name
+
+# Solution:
+
+# def print_full_name(first, last):
+#     # Write your code here
+#     # string=""
+#     # string=first+" "+last
+#     print("Hello "+ first+" "+last+"! You just delved into python.")
+#     # return string
+
+# if __name__ == '__main__':
+#     first_name = input()
+#     last_name = input()
+#     print_full_name(first_name, last_name)
+
+# After this Question
+# Rank-->761043
+# 3 Star Coder (125/220)
