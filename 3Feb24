@@ -1,0 +1,72 @@
+# Basics Of Python-->
+# Date--> 3 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+# 
+
+# HAcker RAnk Problem-->
+
+# Question 1-->https://www.hackerrank.com/challenges/python-string-split-and-join/problem?isFullScreen=true
+
+# Task
+# You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen.
+# Function Description
+# Complete the split_and_join function in the editor below.
+# split_and_join has the following parameters:
+# string line: a string of space-separated words
+# Returns
+# string: the resulting string
+
+# Solution:
+
+# def split_and_join(line):
+#     # write your code here
+#     a=line.split(" ")
+#     b="-".join(a)
+#     return b
+
+# if __name__ == '__main__':
+#     line = input()
+#     result = split_and_join(line)
+#     print(result)
+
+# After this Question
+# Rank-->708649
+# 3 Star Coder (135/220)
+
+# Question 2-->https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true
+
+# Input Format
+# The first line contains an integer, , denoting the number of commands.
+# Each line  of the  subsequent lines contains one of the commands described above.
+
+# Constraints
+# The elements added to the list must be integers.
+# Output Format
+# For each command of type print, print the list on a new line.
+# Sample Input 0
+
+# Solution:
+# if __name__ == '__main__':
+#     N = int(input())
+#     l=[];
+#     for i in range(0,N):
+#         ans=input().split();
+#         if ans[0] == "insert":
+#             l.insert(int(ans[1]),int(ans[2]));
+#         elif ans[0] == "append":
+#             l.append(int(ans[1]))
+#         elif ans[0] == "pop":
+#             l.pop();
+#         elif ans[0] == "print":
+#             print(l)
+#         elif ans[0] == "remove":
+#             l.remove(int(ans[1]))
+#         elif ans[0] == "sort":
+#             l.sort();
+#         else:
+#             l.reverse();
+        
+    
+# After this Question
+# Rank-->668423
+# 3 Star Coder (145/220)
