@@ -1,0 +1,61 @@
+# Basics Of Python-->
+# Date--> 4 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+
+
+# HAckerRAnk Problem:
+
+# Question1)->https://www.hackerrank.com/challenges/list-comprehensions/problem?isFullScreen=true
+
+# Let's learn about list comprehensions! You are given three integers 
+#  and  representing the dimensions of a cuboid along with an integer .
+#  Print a list of all possible coordinates given by  on a 3D grid 
+# where the sum of  is not equal to . Here, .
+#  Please use list comprehensions rather than multiple loops, as a learning exercise.
+
+# Solution:
+# if __name__ == '__main__':
+#     x = int(input())
+#     y = int(input())
+#     z = int(input())
+#     n = int(input())
+    
+#     print(list([i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1)  if i+j+k !=n))
+
+# After this Question
+# Rank-->632527
+# 3 Star Coder (155/220)
+
+# Question2)->https://www.hackerrank.com/challenges/find-a-string/problem?isFullScreen=true
+
+# In this challenge, the user enters a string and a substring. You have to print the number of times that the substring occurs in the given string. String traversal will take place from left to right, not from right to left.
+# NOTE: String letters are case-sensitive.
+# Input Format
+# The first line of input contains the original string. The next line contains the substring.
+# Constraints
+# Each character in the string is an ascii character.
+# Output Format
+# Output the integer number indicating the total number of occurrences of the substring in the original string.
+
+# Solution:
+# def count_substring(string, sub_string):
+#     cnt=0
+#     for j in range(len(string) - len(sub_string) +1):
+#         string_to_compare=string[j:j+len(sub_string)]
+        
+#         if string_to_compare == sub_string:
+#             cnt+=1
+    
+
+#     return cnt 
+
+# if __name__ == '__main__':
+#     string = input().strip()
+#     sub_string = input().strip()
+    
+#     count = count_substring(string, sub_string)
+#     print(count)
+
+# After this Question
+# Rank-->601487
+# 3 Star Coder (165/220)
