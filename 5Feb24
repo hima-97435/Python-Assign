@@ -1,0 +1,58 @@
+# Basics Of Python-->
+# Date--> 5 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+
+# HAckerRAnk Problem:
+
+# Question1:https://www.hackerrank.com/challenges/python-mutations/problem?isFullScreen=true
+
+# Task
+# Read a given string, change the character at a given index and then print the modified string.
+# Function Description
+# Complete the mutate_string function in the editor below.
+# mutate_string has the following parameters:
+# string string: the string to change
+# int position: the index to insert the character at
+# string character: the character to insert
+# Returns
+# string: the altered string
+
+# Solution:
+
+# def mutate_string(string, position, character):
+#     final_string="";
+#     final_string=string[:position]+ character+string[position+1:]
+    
+#     return final_string
+
+# if __name__ == '__main__':
+#     s = input()
+#     i, c = input().split()
+#     s_new = mutate_string(s, int(i), c)
+#     print(s_new)
+
+# After this Question
+# Rank-->572984
+# 3 Star Coder (175/220)
+
+# Question2)->https://www.hackerrank.com/challenges/string-validators/problem?isFullScreen=true
+
+# In the first line, print True if  has any alphanumeric characters. Otherwise, print False.
+# In the second line, print True if  has any alphabetical characters. Otherwise, print False.
+# In the third line, print True if  has any digits. Otherwise, print False.
+# In the fourth line, print True if  has any lowercase characters. Otherwise, print False.
+# In the fifth line, print True if  has any uppercase characters. Otherwise, print False.
+
+# Solutioo:
+# if __name__ == '__main__':
+#     s = input()
+#     print(any(i.isalnum() for i in s))
+#     print(any(i.isalpha() for i in s))
+#     print(any(i.isdigit() for i in s))
+#     print(any(i.islower() for i in s))
+#     print(any(i.isupper() for i in s))
+
+# After this Question
+# Rank-->547380
+# 3 Star Coder (185/220)
+
