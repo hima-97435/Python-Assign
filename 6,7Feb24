@@ -1,0 +1,176 @@
+# Basics Of Python-->
+# Date--> 7 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+
+# HAckerRAnk Problem:
+
+# Question1)->https://www.hackerrank.com/challenges/text-alignment/problem?isFullScreen=true
+
+# You are given a partial code that is used for generating the HackerRank Logo of variable thickness.
+# Your task is to replace the blank (______) with rjust, ljust or center.
+# Input Format
+# A single line containing the thickness value for the logo.
+# Constraints
+# The thickness must be an odd number.
+# Output Format
+# Output the desired logo.
+
+# Solution:
+#Replace all ______ with rjust, ljust or center. 
+
+# thickness = int(input()) #This must be an odd number
+# c = 'H'
+
+# #Top Cone
+# for i in range(thickness):
+#     print((c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1))
+
+# #Top Pillars
+# for i in range(thickness+1):
+#     print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+
+# #Middle Belt
+# for i in range((thickness+1)//2):
+#     print((c*thickness*5).center(thickness*6))    
+
+# #Bottom Pillars
+# for i in range(thickness+1):
+#     print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))    
+
+# #Bottom Cone
+# for i in range(thickness):
+#     print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
+    
+    
+# After this Question
+# Rank-->524294
+# 3 Star Coder (195/220)
+
+# Question2)->https://www.hackerrank.com/challenges/text-wrap/problem?isFullScreen=true
+
+# You are given a string  and width .
+# Your task is to wrap the string into a paragraph of width .
+# Function Description
+# Complete the wrap function in the editor below.
+# wrap has the following parameters:
+# string string: a long string
+# int max_width: the width to wrap to
+# Returns
+# string: a single string with newline characters ('\n') where the breaks should be
+# Input Format
+# The first line contains a string, .
+# The second line contains the width, .
+
+# Solution:
+# import textwrap
+
+# def wrap(string, max_width):
+    
+#     return textwrap.fill(string,max_width)
+
+# if __name__ == '__main__':
+#     string, max_width = input(), int(input())
+#     result = wrap(string, max_width)
+#     print(result)
+
+# After this Question
+# Rank-->505458
+# 3 Star Coder (205/220)
+
+
+# Question3)->https://www.hackerrank.com/challenges/designer-door-mat/problem?isFullScreen=true
+
+# Input Format
+# A single line containing the space separated values of  and .
+# Constraints
+# Output Format
+# Output the design pattern.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# n,m=map(int,input().split())
+# for i in range(n//2):
+#     j=int((2*i)+1)
+#     print(('.|.'*j).center(m,'-'))  
+# print("WELCOME".center(m,'-'))
+# for i in reversed(range(n//2)):
+#     j=int((2*i)+1)
+#     print(('.|.'*j).center(m,'-'))
+    
+# After this Question
+# Rank-->489434
+# 3 Star Coder (215/220)
+
+# Question4)->https://www.hackerrank.com/challenges/python-string-formatting/problem?isFullScreen=true
+# Given an integer, , print the following values for each integer  from  to :
+# Decimal
+# Octal
+# Hexadecimal (capitalized)
+# Binary
+# Function Description
+# Complete the print_formatted function in the editor below.
+# print_formatted has the following parameters:
+# int number: the maximum value to print
+# Prints
+# The four values must be printed on a single line in the order specified above for each  from  to . Each value should be space-padded to match the width of the binary value of  and the values should be separated by a single space.
+# Input Format
+# A single integer denoting .
+
+# Solution:
+# def print_formatted(number):
+#     width=len(bin(number)[2:])
+#     for i in range(1, number+1):
+#         deci = str(i)
+#         octa= oct(i)[2:]
+#         hexa = hex(i)[2:].upper()
+#         bina= bin(i)[2:]
+#         print(deci.rjust(width),octa.rjust(width),hexa.rjust(width),bina.rjust(width))
+        
+    
+#     # your code goes here
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     print_formatted(n)
+
+# After this Question
+# Rank-->455099
+# 4 Star Coder (225/220)
+
+# Question5)->https://www.hackerrank.com/challenges/alphabet-rangoli/problem?isFullScreen=true
+
+# The center of the rangoli has the first alphabet letter a, and the boundary has the  alphabet letter (in alphabetical order).
+# Function Description
+# Complete the rangoli function in the editor below.
+# rangoli has the following parameters:
+# int size: the size of the rangoli
+# Returns
+# string: a single string made up of each of the lines of the rangoli separated by a newline character (\n)
+# Input Format
+# Only one line of input containing , the size of the rangoli.
+
+# Solution:
+# a="abcdefghijklmnopqrstuvwxyz"
+# def print_rangoli(size):
+   
+#     lines = []
+#     for row in range(size):
+#         print_ = "-".join(a[row:size])
+#         lines.append(print_[::-1] + print_[1:])
+#     width = len(lines[0])
+    
+#     for row in range(size-1, 0, -1):
+#         print(lines[row].center(width, '-'))
+        
+#     for row in range(size):
+#         print(lines[row].center(width, '-'))
+#     # your code goes here
+        
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     print_rangoli(n)
+
+# After this Question
+# Rank-->409221
+# 4 Star Coder (245/220)
