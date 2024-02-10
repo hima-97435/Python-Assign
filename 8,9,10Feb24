@@ -1,0 +1,198 @@
+# Basics Of Python-->
+# Date--> 7 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+
+# HAckerRAnk Problem:
+
+# Question 1)->https://www.hackerrank.com/challenges/capitalize/problem?isFullScreen=true
+
+# You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, alison heck should be capitalised correctly as Alison Heck.
+# Given a full name, your task is to capitalize the name appropriately.
+# Input Format
+# A single line of input containing the full name, .
+# Constraints
+# The string consists of alphanumeric characters and spaces.
+# Note: in a word only the first character is capitalized. Example 12abc when capitalized remains 12abc.
+# Output Format
+# Print the capitalized string, .
+
+# Solution:
+#!/bin/python3
+
+# import math
+# import os
+# import random
+# import re
+# import sys
+
+# # Complete the solve function below.
+# def solve(s):
+#     ans = s.split(' ')
+#     ans1 = (((i.capitalize() for i in ans)))
+#     return ' '.join(ans1)
+
+
+# if __name__ == '__main__':
+#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+#     s = input()
+
+#     result = solve(s)
+
+#     fptr.write(result + '\n')
+
+#     fptr.close()
+
+
+# After this Question
+# Rank-->364040
+# 4 Star Coder (275/400)
+
+# Question2)https://www.hackerrank.com/challenges/the-minion-game/problem?isFullScreen=true
+
+# Function Description
+# Complete the minion_game in the editor below.
+# minion_game has the following parameters:
+# string string: the string to analyze
+# Prints
+# string: the winner's name and score, separated by a space on one line, or Draw if there is no winner
+# Input Format
+# A single line of input containing the string .
+# Note: The string  will contain only uppercase letters: .
+
+# # Solution:
+# def minion_game(string):
+#     # your code goes here
+#     s=len(string)
+#     vowel=0
+#     consonant=0
+    
+#     for i in range(s):
+#         if string[i] in 'AEIOU':
+#             vowel+=(s-i)
+#         else:
+#             consonant+=(s-i)
+#     if vowel < consonant:
+#         print("Stuart "+str(consonant))
+#     elif consonant<vowel:
+#         print("Kevin "+ str(vowel))
+#     else:
+#         print("Draw")
+    
+    
+#     return
+
+# if __name__ == '__main__':
+#     s = input()
+#     minion_game(s)
+
+# After this Question
+# Rank-->323364
+# 4 Star Coder (315/400)
+
+# Question03)https://www.hackerrank.com/challenges/merge-the-tools/problem?isFullScreen=true
+
+# Function Description
+# Complete the merge_the_tools function in the editor below.
+# merge_the_tools has the following parameters:
+# string s: the string to analyze
+# int k: the size of substrings to analyze
+# Prints
+# Print each subsequence on a new line. There will be  of them. No return value is expected.
+# Input Format
+# The first line contains a single string, .
+# The second line contains an integer, , the length of each substring.
+
+# Solution:
+# def merge_the_tools(string, k):
+#     # your code goes here
+#     temp=[]
+#     len_temp=0
+#     for item in string:
+#         len_temp+=1
+#         if item not in temp:
+#             temp.append(item)
+#         if len_temp == k:
+#             print(''.join(temp))
+#             temp=[]
+#             len_temp=0
+
+# if __name__ == '__main__':
+#     string, k = input(), int(input())
+#     merge_the_tools(string, k)
+
+# After this Question
+# Rank-->295788
+# 4 Star Coder (355/400)
+
+
+# Question-4)https://www.hackerrank.com/challenges/itertools-product/problem?isFullScreen=true
+
+# The first line contains the space separated elements of list .
+# The second line contains the space separated elements of list .
+
+# Both lists have no duplicate integer elements.
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# from itertools import product
+
+# input_A = list(map(int, input().split()))
+# input_B = list(map(int, input().split()))
+
+# print(*list(product(input_A, input_B)))
+
+#  After this Question
+# Rank-->290529
+# 4 Star Coder (365/400)
+
+# Question-5)https://www.hackerrank.com/challenges/polar-coordinates/problem?isFullScreen=true
+
+# Task
+# You are given a complex . Your task is to convert it to polar coordinates.
+# Input Format
+# A single line containing the complex number . Note: complex() function can be used in python to convert the input as a complex number.
+# Constraints
+# Given number is a valid complex number
+# Output Format
+# Output two lines:
+# The first line should contain the value of .
+# The second line should contain the value of .
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import cmath
+# n=input()
+# s=complex(n)
+# print(abs(s))
+# print(cmath.phase(s))
+
+#  After this Question
+# Rank-->285775
+# 4 Star Coder (375/400)
+
+# Question-6)https://www.hackerrank.com/challenges/collections-counter/problem?isFullScreen=true
+
+# The first line contains , the number of shoes.
+# The second line contains the space separated list of all the shoe sizes in the shop.
+# The third line contains , the number of customers.
+# The next  lines contain the space separated values of the  desired by the customer and , the price of the shoe.
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# from collections import Counter
+# x=int(input())
+# y=Counter(map(int,input().split()))
+# z=int(input())
+
+# total=0
+# for i in range(z):
+#     size,rate=map(int,input().split())
+#     if y[size]:
+#         y[size]-=1
+#         total+=rate
+# print(total)
+
+#  After this Question
+# Rank-->2281986
+# 4 Star Coder (385/400)
