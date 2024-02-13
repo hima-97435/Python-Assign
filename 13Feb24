@@ -1,0 +1,66 @@
+# Intermediate level Python-->
+# Date--> 13 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+
+# HAckerRAnk Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/exceptions/problem?isFullScreen=true
+
+# Task
+# You are given two values  and .
+# Perform integer division and print .
+# Input Format
+# The first line contains , the number of test cases.
+# The next  lines each contain the space separated values of  and .
+# Constraints
+# Output Format
+# Print the value of .
+# In the case of ZeroDivisionError or ValueError, print the error code
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# for i in range(int(input())):
+#     try:
+#         a,b=map(int,input().split())
+#         print(a//b)
+#     except Exception as e:
+#         print("Error Code:",e)
+            
+# After this Question
+# Rank-->183796
+# 5 Star Coder --> {445};(35/115)
+
+# Question-2)https://www.hackerrank.com/challenges/py-collections-namedtuple/problem?isFullScreen=true
+
+# Input Format
+
+# The first line contains an integer , the total number of students.
+# The second line contains the names of the columns in any order.
+# The next  lines contains the , ,  and , under their respective column names.
+
+# Constraints
+
+
+# Output Format
+
+# Print the average marks of the list corrected to 2 decimal places.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import collections
+
+# n = int(input())
+# scol = ','.join(input().split())
+# Student = collections.namedtuple('Student',scol)
+
+# sum = 0
+# for i in range(n):
+#     row = input().split()
+#     student = Student(*row)
+#     sum += int(student.MARKS)
+
+# print(sum/n)
+
+# After this Question
+# Rank-->168998
+# 5 Star Coder --> {455};(36/115)
