@@ -1,0 +1,69 @@
+# Intermediate level Python-->
+# Date--> 16 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+
+# HAckerRAnk Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/symmetric-difference/problem?isFullScreen=true
+
+# Task
+# Given  sets of integers,  and , print their symmetric difference in ascending order. The term symmetric difference indicates those values that exist in either  or  but do not exist in both.
+
+# Input Format
+
+# The first line of input contains an integer, .
+# The second line contains  space-separated integers.
+# The third line contains an integer, .
+# The fourth line contains  space-separated integers.
+
+# Output Format
+
+# Output the symmetric difference integers in ascending order, one per line.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# n1=int(input())
+# set_a=set(map(int,input().split()))
+# n2=int(input())
+# set_b = set(map(int,input().split()))
+# a=(set_a.difference(set_b))
+# b=(set_b.difference(set_a))
+# ans=a.union(b)
+# for i in sorted(ans):
+#     print(i)
+
+# # After this Question
+# Rank-->117110
+# 5 Star Coder --> {585};(41/115)
+
+# Question-2) https://www.hackerrank.com/challenges/itertools-combinations/problem?isFullScreen=true
+
+# Task
+
+# You are given a string .
+# Your task is to print all possible combinations, up to size , of the string in lexicographic sorted order.
+
+# Input Format
+
+# A single line containing the string  and integer value  separated by a space.
+
+# Constraints
+
+
+# The string contains only UPPERCASE characters.
+
+# Output Format
+
+# Print the different combinations of string  on separate lines.
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# from itertools import combinations
+# word , length  = input().split()
+# for i in range(1, int(length)+1):
+#     for j in combinations(sorted(word), i):
+#         print (''.join(j))
+
+# # After this Question
+# Rank-->114159
+# 5 Star Coder --> {595};(42/115)
