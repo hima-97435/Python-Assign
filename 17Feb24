@@ -1,0 +1,63 @@
+# Intermediate level Python-->
+# Date--> 16 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+
+# HAckerRAnk Problem:
+# Question-1)https://www.hackerrank.com/challenges/itertools-combinations-with-replacement/problem?isFullScreen=true
+#   Task
+# You are given a string .
+# Your task is to print all possible size  replacement combinations of the string in lexicographic sorted order.
+# Input Format
+# A single line containing the string  and integer value  separated by a space.
+# Constraints
+# The string contains only UPPERCASE characters.
+# Output Format
+# Print the combinations with their replacements of string  on separate lines.
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# from itertools import combinations_with_replacement
+
+# io = input().split();
+# char = sorted(io[0]);
+# N = int(io[1]);
+
+# for i in combinations_with_replacement(char,N):
+#     print(''.join(i));
+
+    # After this Question
+    # Rank-->108771
+    # 5 Star Coder --> {615};(43/115)
+
+# Question-2)https://www.hackerrank.com/challenges/word-order/problem?isFullScreen=true
+
+# Input Format
+
+# The first line contains the integer, .
+# The next  lines each contain a word.
+
+# Output Format
+
+# Output  lines.
+# On the first line, output the number of distinct words from the input.
+# On the second line, output the number of occurrences for each distinct word according to their appearance in the input.
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# n_ish=int(input())
+# counter_dict= {}
+# words_list = []
+
+# for i in range(0,n_ish):
+#     word=input()
+#     words_list.append(word)
+#     if word in counter_dict:
+#         counter_dict[word]+=1
+#     else:
+#         counter_dict[word]=1
+# print(len(counter_dict))
+# print(' '.join([str(counter_dict[word]) for word in counter_dict]))
+
+    # After this Question
+    # Rank-->97114
+    # 5 Star Coder --> {665};(44/115)
