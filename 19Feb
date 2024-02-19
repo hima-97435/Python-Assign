@@ -1,0 +1,74 @@
+# Intermediate level Python-->
+# Date--> 19 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+
+# HAckerRAnk Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/compress-the-string/problem?isFullScreen=true
+
+# You are given a string . Suppose a character '' occurs consecutively  times in the string. Replace these consecutive occurrences of the character '' with  in the string.
+
+# For a better understanding of the problem, check the explanation.
+
+# Input Format
+
+# A single line of input consisting of the string .
+
+# Output Format
+
+# A single line of output consisting of the modified string.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# from itertools import groupby
+
+# # using for loop to iterate through the string
+# for k, c in groupby(input()):
+        
+#     #printing the output
+#     print("(%d, %d)" % (len(list(c)), int(k)), end=' ')
+
+    # After this Question
+    # Rank-->87669
+    # 5 Star Coder --> {715};(47/115)
+
+# Question-2)  https://www.hackerrank.com/challenges/most-commons/problem?isFullScreen=true
+
+# Input Format
+
+# A single line of input containing the string .
+
+# Constraints
+
+#  has at least  distinct characters
+# Output Format
+
+# Print the three most common characters along with their occurrence count each on a separate line.
+# Sort output in descending order of occurrence count.
+# If the occurrence count is the same, sort the characters in alphabetical order.
+
+# Solution:
+
+#!/bin/python3
+
+# import math
+# import os
+# import random
+# import re
+# import sys
+# from collections import Counter
+
+
+
+# if __name__ == '__main__':
+#     s = input()
+#     s=sorted(s)
+    
+#     FREQUENCY = Counter(list(s))
+    
+#     for k , v in FREQUENCY.most_common(3):
+#         print(k,v)
+    
+    # After this Question
+    # Rank-->82777
+    # 5 Star Coder --> {745};(48/115)
