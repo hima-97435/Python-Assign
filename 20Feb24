@@ -1,0 +1,96 @@
+# Intermediate level Python-->
+# Date--> 20 Febrary , 2024
+# Author Name--> Himanshu Pokhriyal
+# Version->Python 3
+
+# HAckerRAnk Problem:
+
+# Question-1): https://www.hackerrank.com/challenges/py-set-union/problem?isFullScreen=true
+
+# Input Format
+
+# The first line contains an integer, , the number of students who have subscribed to the English newspaper.
+# The second line contains  space separated roll numbers of those students.
+# The third line contains , the number of students who have subscribed to the French newspaper.
+# The fourth line contains  space separated roll numbers of those students.
+
+# Constraints
+
+
+# Output Format
+
+# Output the total number of students who have at least one subscription.
+
+# # Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# n1=int(input())
+# eng_roll=set(input().split())
+
+# n2=int(input())
+# french_roll=set(input().split())
+
+# print(len(eng_roll.union(french_roll)))
+
+    # After this Question
+    # Rank-->8129
+    # 5 Star Coder --> {755};(49/115)
+
+# Question-2): https://www.hackerrank.com/challenges/piling-up/problem?isFullScreen=true
+
+# # Input Format
+
+# The first line contains a single integer , the number of test cases.
+# For each test case, there are  lines.
+# The first line of each test case contains , the number of cubes.
+# The second line contains  space separated integers, denoting the sideLengths of each cube in that order.
+
+# Constraints
+# Output Format
+
+# For each test case, output a single line containing either Yes or No
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# from collections import deque
+
+# N=int(input())
+
+# for _ in range(N):
+#     flag=True
+#     input()
+#     d= deque(map(int, input().strip().split()))
+#     if(d[0] >=d[-1]):
+#         max=d.popleft()
+#     else:
+#         max=d.pop()
+#     while d:
+#         if(len(d) == 1):
+#             if(d[0] <= max):
+#                 break;
+#             else:
+#                 flag=False
+#                 break
+#         else:
+#             if(d[0] <= max and d[-1]<=max):
+#                 if(d[0] >= d[-1]):
+#                     max=d.popleft()
+#                 else:
+#                     max=d.pop()
+#             elif(d[0]<=max):
+#                 max=d.popleft()
+#             elif(d[-1]<=max):
+#                 max=d.pop()
+#             else:
+#                 flag=False
+#                 break;
+#     if flag:
+#         print("Yes")
+#     else:
+#         print("No")
+            
+    # After this Question
+    # Rank-->74070
+    # 5 Star Coder --> {805};(50/115)  
+
+
+# Congrats Himanshu! You just solved all the Collections challenges in Python!
