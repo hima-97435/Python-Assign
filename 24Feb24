@@ -1,0 +1,67 @@
+# Date->23 febrary,2024
+# Author name ->Himanshu Pokhriyal
+# Version->3(HackerRank)
+
+# HAckerRAnk Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/maximize-it/problem?isFullScreen=true
+
+# You are given a function . You are also given  lists. The  list consists of  elements.
+# You have to pick one element from each list so that the value from the equation below is maximized:
+# %
+#  denotes the element picked from the  list . Find the maximized value  obtained.
+#  denotes the modulo operator.
+# Note that you need to take exactly one element from each list, not necessarily the largest element. You add the squares of the chosen elements and perform the modulo operation. The maximum value that you can obtain, will be the answer to the problem.
+# Input Format
+# The first line contains  space separated integers  and .
+# The next  lines each contains an integer , denoting the number of elements in the  list, followed by  space separated integers denoting the elements in the list.
+# Constraints
+# Output Format
+# Output a single integer denoting the value .
+# Solution:'
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# from itertools import product
+
+# K, M = map(int,input().split())
+
+# N = (list(map(int, input().split()))[1:] for _ in range(K))
+
+# max_lst = []
+# for item in product(*N):
+#     S = 0
+#     for val in item:
+#         S += val**2
+#     S_max = S % M
+#     max_lst.append(S_max)
+    
+# print(max(max_lst))
+
+    # After this Question
+    # Rank-->59833
+    # 5 Star Coder --> {935};(55/115)
+
+
+# Question-2) https://www.hackerrank.com/challenges/python-power-mod-power/problem?isFullScreen=true
+
+# Task
+# You are given three integers: , , and . Print two lines.
+# On the first line, print the result of pow(a,b). On the second line, print the result of pow(a,b,m).
+
+# Input Format
+# The first line contains , the second line contains , and the third line contains .
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# a=int(input())
+# b=int(input())
+# m=int(input())
+
+# print(pow(a,b))
+# print(pow(a,b,m))
+
+    # After this Question
+    # Rank-->58941
+    # 5 Star Coder --> {945};(56/115)
+
+
+# Congrats Himanshu! You just solved all the Itertools challenges in Python!
