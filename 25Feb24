@@ -1,0 +1,96 @@
+# Date->25 febrary,2024
+# Author name ->Himanshu Pokhriyal
+# Version->3(HackerRank)
+
+# HAckerRAnk Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation/problem?isFullScreen=true
+
+# Task
+# Students of District College have subscriptions to English and French newspapers. Some students have subscribed to English only, some have subscribed to French only, and some have subscribed to both newspapers.
+
+# You are given two sets of student roll numbers. One set has subscribed to the English newspaper, and one set has subscribed to the French newspaper. Your task is to find the total number of students who have subscribed to either the English or the French newspaper but not both.
+
+# Input Format
+
+# The first line contains the number of students who have subscribed to the English newspaper.
+# The second line contains the space separated list of student roll numbers who have subscribed to the English newspaper.
+# The third line contains the number of students who have subscribed to the French newspaper.
+# The fourth line contains the space separated list of student roll numbers who have subscribed to the French newspaper.
+
+# Constraints
+
+
+# Output Format
+
+# Output total number of students who have subscriptions to the English or the French newspaper but not both.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# _ =int(input())
+# set_A=set(map(int, input().split()))
+
+# _ =int(input())
+# set_B=set(map(int, input().split()))
+
+# print(len(set_A.symmetric_difference(set_B)))
+
+
+    # After this Question
+    # Rank-->56489
+    # 5 Star Coder --> {975};(59/115)
+
+# Question-2) https://www.hackerrank.com/challenges/py-set-mutations/problem?isFullScreen=true
+
+# TASK
+# You are given a set  and  number of other sets. These  number of sets have to perform some specific mutation operations on set .
+
+# Your task is to execute those operations and print the sum of elements from set .
+
+# Input Format
+
+# The first line contains the number of elements in set .
+# The second line contains the space separated list of elements in set .
+# The third line contains integer , the number of other sets.
+# The next  lines are divided into  parts containing two lines each.
+# The first line of each part contains the space separated entries of the operation name and the length of the other set.
+# The second line of each part contains space separated list of elements in the other set.
+
+#  len(set(A)) 
+#  len(otherSets) 
+
+# Output Format
+
+# Output the sum of elements in set .
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# len_set = int(input())
+
+# storage = set(map(int, input().split()))
+
+# op_len = int(input())
+
+# for i in range(op_len):
+#     operation = input().split()
+#     if operation[0] == 'intersection_update':
+#         temp_storage = set(map(int, input().split()))
+#         storage.intersection_update(temp_storage)
+#     elif operation[0] == 'update':
+#         temp_storage = set(map(int, input().split()))
+#         storage.update(temp_storage)
+#     elif operation[0] == 'symmetric_difference_update':
+#         temp_storage = set(map(int, input().split()))
+#         storage.symmetric_difference_update(temp_storage)
+#     elif operation[0] == 'difference_update':
+#         temp_storage = set(map(int, input().split()))
+#         storage.difference_update(temp_storage)
+#     else :
+#         assert False
+
+# print(sum(storage))
+
+    # After this Question
+    # Rank-->55602
+    # 5 Star Coder --> {985};(60/115)
