@@ -1,0 +1,89 @@
+# Date->25 febrary,2024
+# Author name ->Himanshu Pokhriyal
+# Version->3(HackerRank)
+
+# HAckerRAnk Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/python-quest-1/problem?isFullScreen=true
+
+# You are given a positive integer . Print a numerical triangle of height  like the one below:
+
+# 1
+# 22
+# 333
+# 4444
+# 55555
+# ......
+# Can you do it using only arithmetic operations, a single for loop and print statement?
+
+# Use no more than two lines. The first line (the for statement) is already written for you. You have to complete the print statement.
+
+# Note: Using anything related to strings will give a score of .
+
+# Input Format
+# A single line containing integer, .
+
+# Constraints
+
+# Output Format
+# Print  lines as explained above.
+
+# # Solution:
+# for i in range(1,int(input())):
+#     print((10**(i)//9)*i)
+
+    # After this Question
+    # Rank-->53938
+    # 5 Star Coder --> {1005};(61/115)
+
+# Congrats Himanshu! You just solved all the Math challenges in Python!
+
+# Question-2) https://www.hackerrank.com/challenges/py-the-captains-room/problem?isFullScreen=true
+
+# Mr. Anant Asankhya is the manager at the INFINITE hotel. The hotel has an infinite amount of rooms.
+
+# One fine day, a finite number of tourists come to stay at the hotel.
+# The tourists consist of:
+# → A Captain.
+# → An unknown group of families consisting of  members per group where  ≠ .
+
+# The Captain was given a separate room, and the rest were given one room per group.
+
+# Mr. Anant has an unordered list of randomly arranged room entries. The list consists of the room numbers for all of the tourists. The room numbers will appear  times per group except for the Captain's room.
+
+# Mr. Anant needs you to help him find the Captain's room number.
+# The total number of tourists or the total number of groups of families is not known to you.
+# You only know the value of  and the room number list.
+
+# Input Format
+
+# The first line consists of an integer, , the size of each group.
+# The second line contains the unordered elements of the room number list.
+
+
+# Constraints
+
+
+# Output Format
+
+# Output the Captain's room number.
+
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# N = int(input())
+
+# storage = map(int, input().split())
+# storage = sorted(storage)
+
+# for i in range(len(storage)):
+#     if(i != len(storage)-1):
+#         if(storage[i]!=storage[i-1] and storage[i]!=storage[i+1]):
+#             print(storage[i])
+#             break;
+#     else:
+#         print(storage[i])
+
+    # After this Question
+    # Rank-->53088
+    # 5 Star Coder --> {1015};(62/115)
