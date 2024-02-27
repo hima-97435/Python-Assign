@@ -1,0 +1,88 @@
+# Date->27 febrary,2024
+# Author name ->Himanshu Pokhriyal
+# Version->3(HackerRank)
+
+# HAckerRAnk Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/py-check-subset/problem?isFullScreen=true
+
+# Input Format
+
+# The first line will contain the number of test cases, .
+# The first line of each test case contains the number of elements in set .
+# The second line of each test case contains the space separated elements of set .
+# The third line of each test case contains the number of elements in set .
+# The fourth line of each test case contains the space separated elements of set .
+
+# Constraints
+
+# Output Format
+
+# Output True or False for each test case on separate lines.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# for i in range(int(input())):
+#     a=int(input())
+#     set_a=set(map(int,input().split()))
+    
+#     b=int(input())
+#     set_b=set(map(int,input().split()))
+    
+#     if len(set_a-set_b) == 0:
+#         print("True")
+#     else:
+#         print("False")
+
+
+    # After this Question
+    # Rank-->52289
+    # 5 Star Coder --> {1025};(63/115)
+
+# # Question-2) https://www.hackerrank.com/challenges/py-check-strict-superset/problem?isFullScreen=true
+
+# You are given a set  and  other sets.
+# Your job is to find whether set  is a strict superset of each of the  sets.
+
+# Print True, if  is a strict superset of each of the  sets. Otherwise, print False.
+
+# A strict superset has at least one element that does not exist in its subset.
+
+# Example
+# Set is a strict superset of set.
+# Set is not a strict superset of set.
+# Set is not a strict superset of set.
+
+# Input Format
+
+# The first line contains the space separated elements of set .
+# The second line contains integer , the number of other sets.
+# The next  lines contains the space separated elements of the other sets.
+
+# Constraints
+
+# Output Format
+
+# Print True if set  is a strict superset of all other  sets. Otherwise, print False.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# A = set(input().split())
+# COUNT = 0
+# VALUE = 0
+# for i in range(int(input())):
+#     if A.issuperset(set(input().split())):
+#         COUNT += 1
+#     else:
+#         VALUE += 1
+# if VALUE != 0:
+#     print('False')
+# else:
+#     print('True')
+
+
+    # After this Question
+    # Rank-->51561
+    # 5 Star Coder --> {1035};(64/115)
+
+# Congrats Himanshu! You just solved all the Sets challenges in Python!
