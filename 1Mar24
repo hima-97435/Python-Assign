@@ -1,0 +1,62 @@
+# Author name -> Himanshu Pokhriyal
+# Date->1 March,2024
+# Python Version-3
+
+# HackerRank Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/python-eval/problem?isFullScreen=true
+
+# Task
+# You are given an expression in a line. Read that line as a string variable, such as var, and print the result using eval(var).
+
+# NOTE: Python2 users, please import from __future__ import print_function.
+
+# Constraint
+# Input string is less than 100 characters.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# from __future__ import print_function
+# eval(input())
+
+    # After this Question
+    # Rank-->45700
+    # 5 Star Coder --> {1125};(69/115)
+
+# Question-2) https://www.hackerrank.com/challenges/python-sort-sort/problem?isFullScreen=true
+
+# Note: If two attributes are the same for different rows, for example, if two atheletes are of the same age, print the row that appeared first in the input.
+
+# Input Format
+
+# The first line contains  and  separated by a space.
+# The next  lines each contain  elements.
+# The last line contains .
+
+# Constraints
+# Each element 
+
+# Output Format
+
+# Print the  lines of the sorted table. Each line should contain the space separated elements. Check the sample below for clarity.
+
+# Solution:
+#!/bin/python3
+
+# import math
+# import os
+# import random
+# import re
+# import sys
+
+
+
+# N, M = map(int, input().split())
+# rows = [input() for _ in range(N)]
+# K = int(input())
+# for row in sorted(rows, key=lambda row: int(row.split()[K])):
+#     print(row)
+
+    # After this Question
+    # Rank-->43980
+    # 5 Star Coder --> {1155};(70/115)
