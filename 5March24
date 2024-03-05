@@ -1,0 +1,74 @@
+# Author Name -->Himanshu Pokhriyal
+# Python version-->3
+# Date-->05 MArch.2024
+
+# HAckerRAnk Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/reduce-function/problem?isFullScreen=true
+# Input Format
+
+# First line contains , the number of rational numbers.
+# The  of next  lines contain two integers each, the numerator(  ) and denominator(  ) of the  rational number in the list.
+
+# Constraints
+
+# Output Format
+
+# Print only one line containing the numerator and denominator of the product of the numbers in the list in its simplest form, i.e. numerator and denominator have no common divisor other than .
+
+# Solution:
+# from fractions import Fraction
+# from functools import reduce
+
+# def product(fracs):
+#     # t = # complete this line with a reduce statement
+#     t = Fraction(reduce(lambda x, y: x * y, fracs))
+#     return t.numerator, t.denominator
+
+# if __name__ == '__main__':
+#     fracs = []
+#     for _ in range(int(input())):
+#         fracs.append(Fraction(*map(int, input().split())))
+#     result = product(fracs)
+#     print(*result)
+
+
+    # After this Question
+    # Rank-->35170
+    # 5 Star Coder --> {1345};(78/115)
+
+# Congrats Himanshu! You just solved all the Python Functionals challenges in Python
+
+
+# # Question-2) https://www.hackerrank.com/challenges/re-findall-re-finditer/problem?isFullScreen=true
+
+# Task
+# You are given a string . It consists of alphanumeric characters, spaces and symbols(+,-).
+# Your task is to find all the substrings of  that contains  or more vowels.
+# Also, these substrings must lie in between  consonants and should contain vowels only.
+
+# Note :
+# Vowels are defined as: AEIOU and aeiou.
+# Consonants are defined as: QWRTYPSDFGHJKLZXCVBNM and qwrtypsdfghjklzxcvbnm.
+
+# Input Format
+
+# A single line of input containing string .
+
+# Constraints
+
+
+# Output Format
+
+# Print the matched substrings in their order of occurrence on separate lines.
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import re
+# vowels = 'aeiou'
+# consonants = 'qwrtypsdfghjklzxcvbnm'
+# match = re.findall(r'(?<=[' + consonants + '])([' + vowels + ']{2,})(?=[' + consonants + '])', input(), flags=re.I)
+# print('\n'.join(match or ['-1']))
+
+    # After this Question
+    # Rank-->34342
+    # 5 Star Coder --> {1365};(79/115)
