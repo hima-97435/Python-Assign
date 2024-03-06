@@ -1,0 +1,64 @@
+# Author NAme -->Himanshu Pokhriyal
+# Python Version-->3
+# DAte-->6 MArch, 2024
+
+# HAckerRAnk Problem:
+# Question-1) https://www.hackerrank.com/challenges/re-start-re-end/problem?isFullScreen=true
+
+# Task
+# You are given a string .
+# Your task is to find the indices of the start and end of string  in .
+
+# Input Format
+
+# The first line contains the string .
+# The second line contains the string .
+
+# Constraints
+
+
+
+# Output Format
+
+# Print the tuple in this format: (start _index, end _index).
+# If no match is found, print (-1, -1).
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import re
+
+# string=input()
+# substring=input()
+
+# pattern = re.compile(substring)
+# match = pattern.search(string)
+# if not match: print('(-1, -1)')
+# while match:
+#     print('({0}, {1})'.format(match.start(), match.end() - 1))
+#     match = pattern.search(string, match.start() + 1)
+
+    # After this Question
+    # Rank-->33588
+    # 5 Star Coder --> {1385};(80/115)
+
+# Question-2) https://www.hackerrank.com/challenges/validate-a-roman-number/problem?isFullScreen=true
+
+# You are given a string, and you have to validate whether it's a valid Roman numeral. If it is valid, print True. Otherwise, print False. Try to create a regular expression for a valid Roman numeral.
+
+# Input Format
+
+# A single line of input containing a string of Roman characters.
+
+# Output Format
+
+# Output a single line containing True or False according to the instructions above.
+
+# Solution:
+# regex_pattern = 'M{0,3}(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[VX]|V?I{0,3})$'
+
+# import re
+# print(str(bool(re.match(regex_pattern, input()))))
+
+    # After this Question
+    # Rank-->32880
+    # 5 Star Coder --> {1405};(81/115)
