@@ -1,0 +1,197 @@
+# Author Name-->Himanshu Pokhriyal
+# Python Version-->3
+# Date-->8 March , 2024
+
+# HAckerRAnk Problem
+
+# Question-1) https://www.hackerrank.com/challenges/validating-the-phone-number/problem?isFullScreen=true
+
+# Input Format
+
+# The first line contains an integer , the number of inputs.
+#  lines follow, each containing some string.
+
+# Constraints
+# Output Format
+
+# For every string listed, print "YES" if it is a valid mobile number and "NO" if it is not on separate lines. Do not print the quotes.
+
+# Solution:
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import re
+# [print('YES' if re.match(r'[789]\d{9}$', input()) else 'NO') for _ in range(int(input()))]
+
+
+    # After this Question
+    # Rank-->32157
+    # 5 Star Coder --> {1425};(82/115)
+
+# Question-2) https://www.hackerrank.com/challenges/validating-named-email-addresses/problem?isFullScreen=true
+
+# Input Format
+
+# The first line contains a single integer, , denoting the number of email address.
+# Each line  of the  subsequent lines contains a name and an email address as two space-separated values following this format:
+
+# name <user@email.com>
+# Constraints
+
+# Output Format
+
+# Print the space-separated name and email address pairs containing valid email addresses only. Each pair must be printed on a new line in the following format:
+
+# name <user@email.com>
+# You must print each valid email address in the same order as it was received as input.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# import re
+
+# pattern = r'^<[A-Za-z](\w|-|\.|_)+@[A-Za-z]+\.[A-Za-z]{1,3}>$'
+# for _ in range(int(input())):
+#     name,email=input().split(' ')
+#     if re.match(pattern,email):
+#         print(name,email)
+
+    # After this Question
+    # Rank-->31463
+    # 5 Star Coder --> {1445};(83/115)
+
+# Question-3) https://www.hackerrank.com/challenges/hex-color-code/problem?isFullScreen=true
+
+# CSS colors are defined using a hexadecimal (HEX) notation for the combination of Red, Green, and Blue color values (RGB).
+
+# Specifications of HEX Color Code
+
+# ■ It must start with a '#' symbol.
+# ■ It can have  or  digits.
+# ■ Each digit is in the range of  to . ( and ).
+# ■  letters can be lower case. ( and  are also valid digits).
+
+# Examples
+
+# Valid Hex Color Codes
+# #FFF 
+# #025 
+# #F0A1FB 
+
+# Invalid Hex Color Codes
+# #fffabg
+# #abcf
+# #12365erff
+# You are given  lines of CSS code. Your task is to print all valid Hex Color Codes, in order of their occurrence from top to bottom.
+
+# CSS Code Pattern
+
+# Selector
+# {
+# 	Property: Value;
+# }
+# Input Format
+
+# The first line contains , the number of code lines.
+# The next  lines contains CSS Codes.
+
+# Constraints
+
+
+
+# Output Format
+
+# Output the color codes with '#' symbols on separate lines.
+
+# Solution:
+# # Enter your code here. Read input from STDIN. Print output to STDOUT
+# import re
+
+# T=int(input())
+# in_css=False
+# for _ in range(T):
+#     s=input()
+#     if '{' in s:
+#         in_css=True
+#     elif '}' in s:
+#         in_css=False
+#     elif in_css:
+#         for color in re.findall('#[0-9a-fA-F]{3,6}', s):
+#             print(color)
+        
+    # After this Question
+    # Rank-->30430
+    # 5 Star Coder --> {1475};(84/115)
+
+# Question-4) https://www.hackerrank.com/challenges/html-parser-part-1/problem?isFullScreen=true
+
+# Input Format
+
+# The first line contains integer , the number of lines in a HTML code snippet.
+# The next  lines contain HTML code.
+
+# Constraints
+
+# Output Format
+
+# Print the HTML tags, attributes and attribute values in order of their occurrence from top to bottom in the given snippet.
+
+# Use proper formatting as explained in the problem statement.
+
+# Solution:
+# from html.parser import HTMLParser
+
+# class MyHTMLParser(HTMLParser):
+#     def handle_starttag(self, tag, attrs):
+#         print ('Start :', tag)
+#         for ele in attrs:
+#             print ('->', ele[0], '>', ele[1])
+
+#     def handle_endtag(self, tag):
+#         print ('End   :', tag)
+
+#     def handle_startendtag(self, tag, attrs):
+#         print ('Empty :', tag)
+#         for ele in attrs:
+#             print ('->', ele[0], '>', ele[1])
+
+# parser = MyHTMLParser()
+# for _ in range(int(input())):
+#     parser.feed(input())
+
+    # After this Question
+    # Rank-->29471
+    # 5 Star Coder --> {1505};(85/115)
+
+# Question-5)  https://www.hackerrank.com/challenges/detect-html-tags-attributes-and-attribute-values/problem?isFullScreen=true
+
+# Input Format
+
+# The first line contains an integer , the number of lines in the HTML code snippet.
+# The next  lines contain HTML code.
+
+# Constraints
+
+
+# Output Format
+
+# Print the HTML tags, attributes and attribute values in order of their occurrence from top to bottom in the snippet.
+
+# Format your answers as explained in the problem statement.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# from html.parser import HTMLParser
+
+# class MyHTMLParser(HTMLParser):
+#     def handle_starttag(self,tag,attrs):
+#         print(tag)
+#         [print('-> {} > {}'.format(*attr)) for attr in attrs]
+# html = '\n'.join([input() for _ in range(int(input()))])
+# parser = MyHTMLParser()
+# parser.feed(html)
+# parser.close()
+
+    # After this Question
+    # Rank-->28499
+    # 5 Star Coder --> {1535};(86/115)
+
