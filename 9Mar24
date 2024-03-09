@@ -1,0 +1,125 @@
+# Author Name--> Himanshu Pokhriyal
+# Python version --> 3
+# Date--> 9 March 2024
+
+# HAcker Rank Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/html-parser-part-2/problem?isFullScreen=true
+
+# Input Format
+
+# The first line contains integer , the number of lines in the HTML code snippet.
+# The next  lines contains HTML code.
+
+# Constraints
+
+
+# Output Format
+
+# Print the single-line comments, multi-line comments and the data in order of their occurrence from top to bottom in the snippet.
+
+# Format the answers as explained in the problem statement.
+# Solution:
+# from html.parser import HTMLParser
+
+# class MyHTMLParser(HTMLParser):
+#     def handle_comment(self, data):
+#         if '\n' not in data:
+#             print('>>> Single-line Comment')
+#             print(data)
+#         elif '\n' in data:
+#             print('>>> Multi-line Comment')
+#             print(data)
+#     def handle_data(self, data):
+#         if data != '\n':
+#             print('>>> Data')
+#             print(data)
+# html = ""       
+# for i in range(int(input())):
+#     html += input().rstrip()
+#     html += '\n'
+    
+# parser = MyHTMLParser()
+# parser.feed(html)
+# parser.close()
+
+    # After this Question
+    # Rank-->27669
+    # 5 Star Coder --> {1565};(86/115)
+
+# Question-2) https://www.hackerrank.com/challenges/xml-1-find-the-score/problem?isFullScreen=true
+ 
+
+# You are given a valid XML document, and you have to print its score. The score is calculated by the sum of the score of each element. For any element, the score is equal to the number of attributes it has.
+
+# Input Format
+
+# The first line contains , the number of lines in the XML document.
+# The next  lines follow containing the XML document.
+
+# Output Format
+
+# Output a single line, the integer score of the given XML document.
+# # Solution:
+# import sys
+# import xml.etree.ElementTree as etree
+
+# def get_attr_number(words):
+#     count=0
+#     for tag in words:
+#         count=count+get_attr_number(tag)
+#     return count+len(words.attrib)
+#     # your code goes here
+
+# if __name__ == '__main__':
+#     sys.stdin.readline()
+#     xml = sys.stdin.read()
+#     tree = etree.ElementTree(etree.fromstring(xml))
+#     root = tree.getroot()
+#     print(get_attr_number(root))
+
+    # After this Question
+    # Rank-->27142
+    # 5 Star Coder --> {1585};(87/115)
+
+# Question-3) https://www.hackerrank.com/challenges/validating-uid/problem?isFullScreen=true
+
+# ABCXYZ company has up to  employees.
+# The company decides to create a unique identification number (UID) for each of its employees.
+# The company has assigned you the task of validating all the randomly generated UIDs.
+
+# A valid UID must follow the rules below:
+
+# It must contain at least  uppercase English alphabet characters.
+# It must contain at least  digits ( - ).
+# It should only contain alphanumeric characters ( - ,  -  &  - ).
+# No character should repeat.
+# There must be exactly  characters in a valid UID.
+# Input Format
+
+# The first line contains an integer , the number of test cases.
+# The next  lines contains an employee's UID.
+
+# Output Format
+
+# For each test case, print 'Valid' if the UID is valid. Otherwise, print 'Invalid', on separate lines. Do not print the quotation marks.
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import re
+
+# for _ in range(int(input())):
+#     u=''.join(sorted(input()))
+#     try:
+#         assert re.search(r'[A-Z]{2}', u)
+#         assert re.search(r'\d\d\d', u)
+#         assert not re.search(r'[^a-zA-Z0-9]', u)
+#         assert not re.search(r'(.)\1', u)
+#         assert len(u) == 10
+#     except:
+#         print('Invalid')
+#     else:
+#         print('Valid')
+
+    # After this Question
+    # Rank-->26084
+    # 5 Star Coder --> {1625};(87/115)  
