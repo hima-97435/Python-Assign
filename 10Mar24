@@ -1,0 +1,115 @@
+# Author Name-->Himanshu Pokhriyal
+# Python Version-->3.12.1
+# Date-->10 MArch , 2024
+
+# HAcker Rank Problem:
+
+# Question-1): https://www.hackerrank.com/challenges/validating-credit-card-number/problem?isFullScreen=true
+
+# Input Format
+
+# The first line of input contains an integer .
+# The next  lines contain credit card numbers.
+
+# Constraints
+
+
+# Output Format
+
+# Print 'Valid' if the credit card number is valid. Otherwise, print 'Invalid'. Do not print the quotes.
+
+# Solution:
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# import re
+# n = int(input())
+
+# for t in range(n):
+#     credit=input().strip()
+#     credit_removed_hiphen=credit.replace('-','')
+#     valid=True
+#     length_16 = bool(re.match(r'^[4-6]\d{15}$',credit))
+#     length_19 = bool(re.match(r'^[4-6]\d{3}-\d{4}-\d{4}-\d{4}$',credit))    
+#     consecutive = bool(re.findall(r'(?=(\d)\1\1\1)',credit_removed_hiphen))
+#     if length_16 == True or length_19 == True:
+#         if consecutive == True:
+#             valid=False
+#     else:
+#         valid=False
+#     if valid == True:
+#         print('Valid')
+#     else:
+#         print('Invalid')
+    
+    # After this Question
+    # Rank-->25163
+    # 5 Star Coder --> {1665};(90/115)
+
+# Question-2) https://www.hackerrank.com/challenges/xml2-find-the-maximum-depth/problem?isFullScreen=true
+
+# You are given a valid XML document, and you have to print the maximum level of nesting in it. Take the depth of the root as .
+
+# Input Format
+
+# The first line contains , the number of lines in the XML document.
+# The next  lines follow containing the XML document.
+
+# Output Format
+
+# Output a single line, the integer value of the maximum level of nesting in the XML document.
+
+# # Solution:
+# import xml.etree.ElementTree as etree
+
+# maxdepth = 0
+# def depth(elem, level):
+#     global maxdepth
+#     global maxdepth
+    
+#     if (level == maxdepth):
+#         maxdepth += 1
+#     for child in elem:
+#         depth(child, level + 1)
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     xml = ""
+#     for i in range(n):
+#         xml =  xml + input() + "\n"
+#     tree = etree.ElementTree(etree.fromstring(xml))
+#     depth(tree.getroot(), -1)
+#     print(maxdepth)
+
+    # After this Question
+    # Rank-->24747
+    # 5 Star Coder --> {1685};(91/115)  
+
+#   Congrats Himanshu! You just solved all the XML challenges in Python!      # 
+
+# Question-3) https://www.hackerrank.com/challenges/standardize-mobile-number-using-decorators/problem?isFullScreen=true
+
+# Input Format
+
+# The first line of input contains an integer , the number of mobile phone numbers.
+#  lines follow each containing a mobile number.
+
+# Output Format
+
+# Print  mobile numbers on separate lines in the required format.
+# Solution:
+# def wrapper(f):
+#     def fun(l):
+#         f(['+91 ' + c[-10:-5] + ' ' + c[-5:] for c in l])
+#     return fun
+
+# @wrapper
+# def sort_phone(l):
+#     print(*sorted(l), sep='\n')
+
+# if __name__ == '__main__':
+#     l = [input() for _ in range(int(input()))]
+#     sort_phone(l) 
+
+    # After this Question
+    # Rank-->24124
+    # 5 Star Coder --> {1715};(92/115)
+ 
