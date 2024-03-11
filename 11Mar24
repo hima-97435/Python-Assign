@@ -1,0 +1,70 @@
+# Author NAme --> Himanshu Pokhriyal
+# Python version --> 3
+# Date--> 11 March , 2024
+
+# Hacker Rank Problem:
+
+# Question-1) https://www.hackerrank.com/challenges/validating-postalcode/problem?isFullScreen=true
+
+# Input Format
+
+# Locked stub code in the editor reads a single string denoting  from stdin and uses provided expression and your regular expressions to validate if  is a valid postal code.
+
+# Output Format
+
+# You are not responsible for printing anything to stdout. Locked stub code in the editor does that.
+# # Solution:
+
+# regex_integer_in_range = r"^([1-9][0-9]{5})$"	# Do not delete 'r'.
+# regex_alternating_repetitive_digit_pair = r"(?=(\d)\d\1)"	# Do not delete 'r'.
+
+
+# import re
+# P = input()
+
+# print (bool(re.match(regex_integer_in_range, P)) 
+# and len(re.findall(regex_alternating_repetitive_digit_pair, P)) < 2)
+
+    # After this Question
+    # Rank--> 22626
+    # 5 Star Coder --> {1795};(93/115)
+
+# Question-2) https://www.hackerrank.com/challenges/decorators-2-name-directory/problem?isFullScreen=true
+# Input Format
+
+# The first line contains the integer , the number of people.
+#  lines follow each containing the space separated values of the first name, last name, age and sex, respectively.
+
+# Constraints
+
+
+# Output Format
+
+# Output  names on separate lines in the format described above in ascending order of age.
+# Solution:
+# import operator
+
+# def person_lister(f):
+#     def inner(people):
+#         data =sorted(people, key=lambda person: int(person[2]))
+#         sortedpeople=[]
+#         for person in data:
+#             sortedpeople.append(f(person))
+#         return sortedpeople
+#         # complete the function
+#     return inner
+
+# @person_lister
+# def name_format(person):
+#     return ("Mr. " if person[3] == "M" else "Ms. ") + person[0] + " " + person[1]
+
+# if __name__ == '__main__':
+#     people = [input().split() for i in range(int(input()))]
+#     print(*name_format(people), sep='\n')
+
+
+# Congrats Himanshu! You just solved all the Closures and Decorators challenges in Python!
+
+    # After this Question
+    # Rank--> 22038
+    # 5 Star Coder --> {1805};(94/115)
