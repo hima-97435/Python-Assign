@@ -1,0 +1,98 @@
+# Author Name--> Himanshu Pokhriyal
+# Python version --> 3
+# Date -> 12 Mar , 2024
+
+# HAckerRAnk Problem:
+
+# Question -1) https://www.hackerrank.com/challenges/matrix-script/problem?isFullScreen=true
+
+# To decode the script, Neo needs to read each column and select only the alphanumeric characters and connect them. Neo reads the column from top to bottom and starts reading from the leftmost column.
+
+# If there are symbols or spaces between two alphanumeric characters of the decoded script, then Neo replaces them with a single space '' for better readability.
+
+# Neo feels that there is no need to use 'if' conditions for decoding.
+
+# Alphanumeric characters consist of: [A-Z, a-z, and 0-9].
+
+# Input Format
+
+# The first line contains space-separated integers  (rows) and  (columns) respectively.
+# The next  lines contain the row elements of the matrix script.
+
+# Constraints
+
+
+# Note: A  score will be awarded for using 'if' conditions in your code.
+
+# Output Format
+
+# Print the decoded matrix script.
+# Solution:
+#!/bin/python3
+
+# import math
+# import os
+# import random
+# import re
+# import sys
+
+
+
+
+# first_multiple_input = input().rstrip().split()
+
+# n = int(first_multiple_input[0])
+
+# m = int(first_multiple_input[1])
+
+# matrix = []
+
+# for _ in range(n):
+#     matrix_item = input()
+#     matrix.append(matrix_item)
+    
+# matrix = list(zip(*matrix))
+
+# sample = str()
+
+# for words in matrix:
+#     for char in words:
+#         sample += char
+       
+# print(re.sub(r'(?<=\w)([^\w\d]+)(?=\w)', ' ', sample))
+
+    # After this Question
+    # Rank--> 20231
+    # 5 Star Coder --> {1925};(95/115)
+
+
+# Question-2) https://www.hackerrank.com/challenges/np-arrays/problem?isFullScreen=true
+
+# Task
+
+# You are given a space separated list of numbers.
+# Your task is to print a reversed NumPy array with the element type float.
+
+# Input Format
+
+# A single line of input containing space separated numbers.
+
+# Output Format
+
+# Print the reverse NumPy array with type float.
+
+# # Solution:
+# import numpy
+
+# def arrays(arr):
+#     return(numpy.array(arr[::-1], float))
+#     # complete this function
+#     # use numpy.array
+
+# arr = input().strip().split(' ')
+# result = arrays(arr)
+# print(result)
+
+    # After this Question
+    # Rank--> 19930
+    # 5 Star Coder --> {1945};(96/115)
